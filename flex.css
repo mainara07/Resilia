@@ -1,0 +1,24 @@
+.cabecalho .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cabecalho-nav {
+    display: flex;
+
+}
+
+.rodape-social .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape-list {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+
+}
