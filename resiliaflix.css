@@ -1,0 +1,93 @@
+body {
+	background-color: #d3d39a;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    background-color: #1b1b1b;
+	width: 94%;
+	margin: 0 auto;
+}
+.cabecalho {
+	background-color:#1b1b1b;
+    padding: 20px 0;
+    font-style: italic;
+}
+
+.cabecalho-titulo {
+	font-weight: bold;
+    font-size: 2em;
+    font-style: italic;
+	margin-bottom: 20px;
+}
+
+.cabecalho-titulo a {
+	text-decoration: none;
+	color: rgb(235, 235, 49);
+}
+
+.cabecalho-nav-link {
+	padding: 10px;
+	margin-bottom: 10px;
+	color: #1b1b1b;
+	background-color:#e9e345;
+	text-decoration: none;
+	transition: .5s;
+	display: block;
+	border-bottom: 1px solid #9799A6;
+}
+
+.container .conteudoPrincipal-filmes {
+	margin: 50px;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.conteudoPrincipal-filmes {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 10px 10px;
+	align-items: center;
+
+}
+
+.rodape-social {
+    margin-top: 30px;
+	background: #1b1b1b; 
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+@media(min-width: 700px) {
+
+	.container {
+		width: 85%;	
+	}
+
+	.cabecalho-nav-link {
+		border-radius: 5px;
+		border: 1px solid #9799A6;
+	}
+
+	.cabecalho-nav-link:hover {
+		color: #FFFFFF;
+		background-color: #000000;
+	}
+
+	.cabecalho-titulo {
+		margin: 0;
+	}
+
+	.cabecalho-nav {
+		width: auto;
+	}
+
+	.cabecalho-nav-link {
+		width: auto;
+		margin: 0 0 0 10px;
+	}
