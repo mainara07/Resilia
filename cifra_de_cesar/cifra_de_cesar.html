@@ -1,0 +1,32 @@
+<script>
+    function cifraDeCesar (deslocamento, mensagem){
+        var numero= 0;
+        var mensagemEncriptada = "";
+
+        for (var posicao =0; posicao < mensagem.length; posicao++) {
+            numero = mensagem [posicao].charCodeAt();
+            mensagemEncriptada += String.fromCharCode (numero + deslocamento)
+        }
+
+        return mensagemEncriptada
+
+    }
+
+
+    function decifraDeCesar (deslocamento, mensagemCifrada){
+        var numero= 0;
+        var mensagemDecifrada = "";
+
+        for (var posicao =0; posicao < mensagemCifrada.length; posicao++) {
+            numero = mensagemCifrada[posicao].charCodeAt();
+            mensagemDecifrada += String.fromCharCode (numero - deslocamento)
+        }
+        
+        return mensagemDecifrada
+
+    }
+
+    document.write ("Sua mensagem encriptada é " + cifraDeCesar(1,"MAINARA"))
+    document.write ("<br>Sua mensagem decifrada é " + decifraDeCesar(1,"NBJOBSB"))
+
+</script>
